@@ -25,5 +25,9 @@ module.exports = {
         loaders: ['style-loader', 'css-loader']
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css'],
+    modules: [__dirname, 'node_modules']
   }
 }

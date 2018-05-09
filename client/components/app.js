@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import Bio from './bio.js';
-import Contact from './contact.js';
-import Github from './github.js';
+import Bio from './Bio';
+import Contact from './Contact';
+import Github from './Github';
+
+import styles from './../../style.css';
+
 
 class App extends Component {
   constructor(props) {
@@ -10,9 +13,11 @@ class App extends Component {
 
   render() {
     return (
-      <Bio />
-      <Contact />
-      <Github />
+      <div id='btn-container'>
+        <Bio />
+        <Contact />
+        <Github />
+      </div>
     )
   }
 }
