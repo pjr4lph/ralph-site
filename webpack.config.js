@@ -3,11 +3,8 @@ const path = require('path');
 module.exports = {
   entry: './client/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, '/build'),
     filename: 'bundle.js',
-  },
-    devServer: {
-    contentBase: './build/'
   },
   module: {
     rules: [
@@ -25,5 +22,9 @@ module.exports = {
         loaders: ['style-loader', 'css-loader']
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css'],
+    modules: [__dirname, 'node_modules']
   }
 }
