@@ -1,21 +1,12 @@
 body {
   margin: 0;
-  /* background-color: #85aae5; */
+  background: linear-gradient(45deg, #e3d8e0, #9198e5);
 }
 
 h1 {
   display: flex;
   justify-content: center;
   color: #969af2;
-}
-
-#vid {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
 }
 
 button {

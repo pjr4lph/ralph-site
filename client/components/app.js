@@ -3,9 +3,6 @@ import Bio from './Bio';
 import Contact from './Contact';
 import Github from './Github';
 
-import styles from './../../style.css';
-
-
 class App extends Component {
   constructor(props) {
     super(props);
